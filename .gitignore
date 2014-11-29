@@ -4,6 +4,6 @@
 *.[oa]
  bin/
  obj/
- *.save
- *.depend
- *.layout*
+*.save
+*.depend
+*.layout*
