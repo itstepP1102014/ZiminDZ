@@ -2,8 +2,8 @@
 *.exe
 *.obj
 *.[oa]
- bin/
- obj/
+bin/
+obj/
 *.save
 *.depend
 *.layout*
