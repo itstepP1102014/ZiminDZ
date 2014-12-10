@@ -4,7 +4,7 @@
 int main()
 {
 	/* ASCII */
-        for (int number = 0; number <68; number++)
+        for (int number = 0; number <128; number++)
 	{
 		if (number%16 != 0)
 		{

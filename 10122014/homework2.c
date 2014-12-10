@@ -5,14 +5,27 @@
 int main()
 
 {
-	int x;
+	int x, q;
 	signed int p;
-
-	printf("Number x= ");
+	double y, result;
+	printf("Number x= :");
 	scanf("%d", &x);
-	printf("Degree p= ");
+	printf("Degree p= :");
 	scanf("%d", &p);
-	printf("%f", pow(x,p));
+	if (p>=0)
+	{
+	y=x;
+	q=p;
+	result *=x;
+	printf("%f", result);
+	}
+	else
+	{
+	y=1.0/x;
+	q=-p;
+	result *= 1.0/x;
+	printf("%f", result); 
+	}
 
 return 0;
 }
