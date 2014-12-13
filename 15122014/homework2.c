@@ -5,7 +5,7 @@ int main()
 
 {
     int a, b;
-    unsigned int max, min, j, q, r;
+    unsigned int max, min, j, q, r, lcm;
     printf("Enter the first number: ");
     scanf("%d", &a);
     printf("Enter the second number: ");
@@ -33,7 +33,9 @@ int main()
        }
     }
   } while (max != min);
-    printf("The gcd of %d and %d: %d .", a, b, max);
+	lcm = a*b/max;
+    
+printf("The lcm (%d,%d): %u .", a, b, lcm);
 
     return 0;
 }
