@@ -31,10 +31,10 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="../../modules/crc/mathx.c">
+		<Unit filename="../../modules/include/mathx.h" />
+		<Unit filename="../../modules/src/mathx.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="../../modules/include/mathx.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
