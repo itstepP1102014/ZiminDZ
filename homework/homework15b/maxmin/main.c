@@ -7,28 +7,11 @@
 int main()
 {
     int array[SIZE], size;
-    char answer;
     printf("Enter size of array(1-1000): ");
     scanf("%d", &size);
     if (0<=size && size<1000)
     {
-        printf("Do you want to generate random numbers?(y/n):\n");
-        scanf(" %c", &answer);
-        if (answer == 'y')
-        {
-            int i;
-            srand(time(NULL));
-            for(i=0; i<=size; i++)
-            {
-                array[i] = rand()%201-100;
-            }
-        }
-
-        else
-        {
-            inputArray(array, size);
-        } /*answer == no*/
-
+        generateOreNotAnswer(array, size);
         outputArray(array, size);
         maxEvenOfArray(array, size);
         minOddElement(array, size);

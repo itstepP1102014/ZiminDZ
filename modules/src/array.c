@@ -75,13 +75,14 @@ int swap(int *array[], int n, int p)
 }
 
 
-int maxEvenOfArray(const int array[], int size){
+int maxEvenOfArray(const int array[], int size)
+{
     int max = array[0];
     for(int i = 1; i <= size; ++i)
     {
         if(array[i] % 2 == 0)
         {
-             max = array[i] > max? array[i] : max;
+            max = array[i] > max? array[i] : max;
         }
     }
     return max;
@@ -93,9 +94,35 @@ int minOddElement(const int array[], int size)
     int min = array[0];
     for(int i = 1; i <= size; ++i)
     {
-        if(array[i] % 2 != 0){
-           min = array[i] < min? array[i] : min;
+        if(array[i] % 2 != 0)
+        {
+            min = array[i] < min? array[i] : min;
         }
     }
     return min;
+}
+
+
+void generateOreNotAnswer(int array[], int size)
+{
+    char answer;
+    if (0<=size && size<1000)
+    {
+        printf("Do you want to generate random numbers?(y/n):\n");
+        scanf(" %c", &answer);
+        if (answer == 'y')
+        {
+            int i;
+            srand(time(NULL));
+            for(i=0; i<=size; i++)
+            {
+                array[i] = rand()%201-100;
+            }
+        }
+
+        else
+        {
+            inputArray(array, size);
+        } /*answer == no*/
+    }
 }
