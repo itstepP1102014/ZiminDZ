@@ -8,6 +8,6 @@ void inputArray(int array[], int size);
 int arraySearch(int number, const int array[], int size);
 int minOfArray(const int array[], int sizeOfArray, int sizeOfPart);
 int maxOfArray(const int array[], int sizeOfArray, int sizeOfPart);
-
+int swap(int *array[], int n, int p);
 
 #endif // ARRAY_H_INCLUDED

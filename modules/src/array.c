@@ -65,3 +65,11 @@ int maxOfArray(const int array[], int sizeOfArray, int sizeOfPart)
         exit(1);
     }
 }
+
+int swap(int *array[], int n, int p)
+{
+	int temp;
+	temp = array[n];
+	array[n] = array[p];
+	array[p] = temp;
+}
