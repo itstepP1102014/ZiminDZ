@@ -75,12 +75,11 @@ int swap(int *array[], int n, int p)
 }
 
 
-int maxEvenOfArray(const int array[], int size)
-{
+int maxEvenOfArray(const int array[], int size){
     int max = array[0];
-    for(int i = 1; i <= size; i++)
+    for(int i = 1; i <= size; ++i)
     {
-        if(array[i] % 2 == 0 && array[i] > max)
+        if(array[i] % 2 == 0)
         {
              max = array[i] > max? array[i] : max;
         }
@@ -88,13 +87,13 @@ int maxEvenOfArray(const int array[], int size)
     return max;
 }
 
+
 int minOddElement(const int array[], int size)
 {
     int min = array[0];
     for(int i = 1; i <= size; ++i)
     {
-        if(array[i] % 2 != 0 && array[i] < min)
-        {
+        if(array[i] % 2 != 0){
            min = array[i] < min? array[i] : min;
         }
     }
