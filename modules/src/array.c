@@ -1,4 +1,5 @@
 #include <stdio.h>
+#define SIZE 1000
 
 void outputArray(const int array[], int size)
 {
@@ -30,12 +31,12 @@ int arraySearch(int number, const int array[], int size)
     return -1;
 }
 
-int minOfArray(const int array[], int sizeOfArray, int sizeOfPart)
+int minOfArray(const int array[], int size)
 {
-    if(sizeOfPart > 0 && sizeOfPart <= sizeOfArray)
+    if(size > 0 && size <= SIZE)
     {
         int min = array[0];
-        for(int i = 1; i < sizeOfPart; ++i)
+        for(int i = 1; i < size; ++i)
         {
             min = array[i] < min? array[i] : min;
         }
@@ -48,12 +49,12 @@ int minOfArray(const int array[], int sizeOfArray, int sizeOfPart)
     }
 }
 
-int maxOfArray(const int array[], int sizeOfArray, int sizeOfPart)
+int maxOfArray(const int array[], int size)
 {
-    if(sizeOfPart > 0 && sizeOfPart <= sizeOfArray)
+    if(size > 0 && size <= SIZE)
     {
         int max = array[0];
-        for(int i = 1; i < sizeOfPart; ++i)
+        for(int i = 1; i < size; ++i)
         {
             max = array[i] > max? array[i] : max;
         }

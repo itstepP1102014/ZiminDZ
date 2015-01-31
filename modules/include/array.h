@@ -6,8 +6,8 @@
 void outputArray(const int array[], int size);
 void inputArray(int array[], int size);
 int arraySearch(int number, const int array[], int size);
-int minOfArray(const int array[], int sizeOfArray, int sizeOfPart);
-int maxOfArray(const int array[], int sizeOfArray, int sizeOfPart);
+int minOfArray(const int array[], int size);
+int maxOfArray(const int array[], int size);
 int swap(int *array[], int n, int p);
 int minOddElement(const int array[], int size);
 int maxEvenOfArray(const int array[], int size);
