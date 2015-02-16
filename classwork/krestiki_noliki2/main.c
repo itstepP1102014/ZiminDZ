@@ -10,9 +10,6 @@ char m[3][3] =  /* поле для крестиков-ноликов */
     {SPACE, SPACE, SPACE}
 } ;
 
-void get_player_move(), get_computer_move();
-void display();
-
 void displayX0(int i)
 {
     if (i == 0)
