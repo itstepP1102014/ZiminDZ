@@ -5,7 +5,7 @@ int main()
 
 {
 	int i;
-	for(i=1; i<=17; i+=2)
+	for(i=1; i<34; i+=2)
 	{
 		printf("%d^3 = %d\n", i, i*i*i);
 	}

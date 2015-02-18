@@ -4,10 +4,10 @@
 int main()
 
 {
-    int i=1;
-    for ( i; i<=137; i++)
+    
+    for (int i=1; i<=137; ++i)
     {
-        printf("%d Hello World!\n", i++);
+        printf("Hello World!\n");
     }
     return 0;
 }
