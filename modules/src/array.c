@@ -1,7 +1,7 @@
 #include <stdio.h>
 #define SIZE 1000
 
-void outputArray(const int array[], int size)
+void outputArray(const int *array, int size)
 {
     for(int i = 0; i < size; ++i)
     {
@@ -10,7 +10,7 @@ void outputArray(const int array[], int size)
     printf("\n");
 }
 
-void inputArray(int array[], int size)
+void inputArray(int *array, int size)
 {
     for(int i = 0; i < size; ++i)
     {
@@ -19,7 +19,7 @@ void inputArray(int array[], int size)
     }
 }
 
-int arraySearch(int number, const int array[], int size)
+int arraySearch(int number, const int *array, int size)
 {
     for(int i = 0; i < size; ++i)
     {
@@ -31,7 +31,7 @@ int arraySearch(int number, const int array[], int size)
     return -1;
 }
 
-int minOfArray(const int array[], int size)
+int minOfArray(const int *array, int size)
 {
     if(size > 0 && size <= SIZE)
     {
@@ -49,7 +49,7 @@ int minOfArray(const int array[], int size)
     }
 }
 
-int maxOfArray(const int array[], int size)
+int maxOfArray(const int *array, int size)
 {
     if(size > 0 && size <= SIZE)
     {
@@ -67,7 +67,7 @@ int maxOfArray(const int array[], int size)
     }
 }
 
-int swap(int *array[], int n, int p)
+int swap(int *array, int n, int p)
 {
     int temp;
     temp = array[n];
@@ -76,7 +76,7 @@ int swap(int *array[], int n, int p)
 }
 
 
-int maxEvenOfArray(const int array[], int size)
+int maxEvenOfArray(const int *array, int size)
 {
     int max = array[0];
     for(int i = 1; i <= size; ++i)
@@ -90,7 +90,7 @@ int maxEvenOfArray(const int array[], int size)
 }
 
 
-int minOddElement(const int array[], int size)
+int minOddElement(const int *array, int size)
 {
     int min = array[0];
     for(int i = 1; i <= size; ++i)
@@ -104,7 +104,7 @@ int minOddElement(const int array[], int size)
 }
 
 
-void generateOreNotAnswer(int array[], int size)
+void generateOreNotAnswer(int *array, int size)
 {
     char answer;
     if (0<=size && size<1000)

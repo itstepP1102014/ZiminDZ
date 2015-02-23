@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int IndexOfLastNegative (int array[], int size)
+int IndexOfLastNegative (int *array, int size)
 {
     for(int i = size-1; i>=0; --i)
     {
@@ -12,7 +12,7 @@ int IndexOfLastNegative (int array[], int size)
     return -1;
 }
 
-int IndexOfLastPositiveEven (int array[], int size, int p)
+int IndexOfLastPositiveEven (int *array, int size, int p)
 {
     for(int i = size-1; i>=0; --i)
     {
@@ -24,7 +24,7 @@ int IndexOfLastPositiveEven (int array[], int size, int p)
     return -1;
 }
 
-int IndexOfFirstPositive (int array[], int size)
+int IndexOfFirstPositive (int *array, int size)
 {
     for(int i = 0; i < size; ++i)
     {
