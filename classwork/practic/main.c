@@ -8,9 +8,22 @@ void generateArray(int *a, int n, int up, int down);
 
 void bubbleSort(int *a, int n, bool (*less)(int, int));
 
+int sumOfDigit(int a)
+{
+    a = a > 0? a : -a;
+    int result = 0;
+    while(a)
+    {
+        result += a % 10;
+        a /= 10;
+    }
+    return result;
+}
+
 bool less(int a, int b)
 {
-    return a < b;
+    //return a < b; // a > b - обратный порядок
+     return sumOfDigit(a) > sumOfDigit(b);
 }
 
 int main()
@@ -18,7 +31,7 @@ int main()
     srand(time(NULL));
     int *array = NULL;
     array = (int*)malloc(10*sizeof(int));
-    generateArray(array, 20, 0, 15);
+    generateArray(array, 10, 0, 15);
     outputArray(array, 10);
     bubbleSort(array, 10, less);
     outputArray(array, 10);
@@ -30,7 +43,7 @@ int main()
 void outputArray(const int *a, int n)
 {
     for(int i = 0; i < n; ++i)
-        printf ("%d", a[i]);
+        printf ("%d ", a[i]);
 
     printf ("\n");
 }
