@@ -31,26 +31,10 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="check.c">
+		<Unit filename="../../../modules/include/compatibility.h" />
+		<Unit filename="../../../modules/src/compatibility.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="check.h" />
-		<Unit filename="display.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="display.h" />
-		<Unit filename="displayX0.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="displayX0.h" />
-		<Unit filename="get_computer_move.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="get_computer_move.h" />
-		<Unit filename="get_player_move.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="get_player_move.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
